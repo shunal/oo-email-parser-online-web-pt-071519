@@ -4,8 +4,7 @@ class EmailAddressParser
   @formatted_emails = []
   attr_accessor :emails
   
-  def initialize(emails)
-    
+  def initialize(string_of_emails)
   end
   
   def parse(emails)
