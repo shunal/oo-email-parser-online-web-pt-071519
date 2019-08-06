@@ -1,4 +1,5 @@
 require "pry"
+
 class EmailAddressParser
   @formatted_emails = []
   attr_accessor :emails
@@ -14,5 +15,5 @@ class EmailAddressParser
   
   
   
-  binding.pry
+
 end
