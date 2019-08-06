@@ -9,10 +9,10 @@ class EmailAddressParser
   
   def parse(emails)
     emails.split(",", " ")
-    binding.pry
+    
   end
   
   
   
-  
+  binding.pry
 end
