@@ -1,18 +1,15 @@
 require "pry"
 
 class EmailAddressParser
-  @formatted_emails = []
-  attr_accessor :emails
-  
-  def initialize(email_addresses)
+   attr_accessor :email
+  def  initialize(emails)
+    @email = emails
   end
-  
-  def parse(email_addresses)
-    emails.split(",", " ")
-    
+
+  def parse
+    email_array = @email.split(/[, ]/).uniq
+    email_array.reject! {|element| element.empty?}
+    email_array
   end
-  
-  
-  
 
 end
